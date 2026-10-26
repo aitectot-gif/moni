@@ -163,7 +163,10 @@ h3{line-height:1.25}
 .footer-links{display:grid;gap:9px}
 .footer-links a,.footer-links address{display:flex;gap:8px;align-items:flex-start}
 .footer-links .icon{margin-top:.2em;color:#ffad3c}
-.tagline{font-family:var(--serif);font-style:italic;color:#ffc66d!important}
+.social{display:flex;gap:10px;margin-top:18px}
+.footer .social a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#ffffff12;border:1px solid #ffffff22;color:#ffad3c;transition:background .2s,color .2s,transform .2s}
+.footer .social a:hover{background:var(--orange);border-color:var(--orange);color:#fff;transform:translateY(-2px)}
+.social .icon{width:19px;height:19px}
 .footer-bottom{border-top:1px solid #ffffff20;margin-top:35px;padding-top:18px;display:flex;justify-content:space-between;gap:15px;color:#999;font-size:.78rem}
 .footer-bottom a{font-size:.78rem}
 
