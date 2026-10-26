@@ -21,7 +21,6 @@ No build step. Open `index.html` in a browser, or deploy the folder to Vercel.
 
 - [ ] **Domain** — site currently uses `https://moniinterior.vercel.app` in `index.html` (canonical, Open Graph, JSON-LD), `privacy.html`, `robots.txt` and `sitemap.xml`. Swap these when the real domain is connected.
 - [ ] **Project photos** — all images are Unsplash stock. Replace with real MONI Interiors project photos.
-- [ ] **Second phone number** (73974 16967) — left out until confirmed.
 - [ ] **Address pincode** — not supplied.
 - [ ] **Warranty claims** (15-year material / 5-year hardware) and **Polywood authorised distributor** status.
 - [ ] **Stats** — 10 years experience, 500+ projects.
