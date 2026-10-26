@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.moniinteriors.com/sitemap.xml
+Sitemap: https://moniinterior.vercel.app/sitemap.xml
