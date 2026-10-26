@@ -107,6 +107,34 @@
     reveals.forEach(function (el) { el.classList.add('visible'); });
   }
 
+  // Count the stats up from 0 — all numbers share one timer so they finish together
+  var counters = document.querySelectorAll('[data-count]');
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (counters.length && 'IntersectionObserver' in window && !reduceMotion) {
+    counters.forEach(function (el) { el.textContent = '0'; });
+    var runCount = function () {
+      var duration = 2000;
+      var start = null;
+      var tick = function (now) {
+        if (start === null) start = now;
+        var t = Math.min((now - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - t, 3);
+        counters.forEach(function (el) {
+          el.textContent = Math.round(eased * Number(el.getAttribute('data-count')));
+        });
+        if (t < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+    var countIo = new IntersectionObserver(function (entries) {
+      if (entries.some(function (e) { return e.isIntersecting; })) {
+        countIo.disconnect();
+        runCount();
+      }
+    }, { threshold: 0.3 });
+    countIo.observe(counters[0].closest('section') || counters[0]);
+  }
+
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();

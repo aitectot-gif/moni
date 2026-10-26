@@ -75,8 +75,8 @@ h3{line-height:1.25}
 .stat{display:flex;align-items:center;justify-content:center;gap:15px;padding:5px 20px;border-right:1px solid #ffffff2a}
 .stat:last-child{border:0}
 .stat .icon{width:30px;height:30px;color:var(--orange2);stroke-width:1.6}
-.stat strong{display:block;color:#ffae32;font-size:1.35rem;line-height:1.2}
-.stat small{color:#e8e4e0}
+.stat strong{display:block;color:#ffae32;font-size:1.35rem;line-height:1.2;font-variant-numeric:tabular-nums}
+.stat small{display:block;color:#f3efeb;font-size:.95rem;font-weight:700;margin-top:2px}
 
 /* Services */
 .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
@@ -236,7 +236,7 @@ h1{font-size:clamp(2.4rem,11vw,4rem)}
 .stat{justify-content:flex-start;padding:15px 10px;border-right:0;border-bottom:1px solid #ffffff20}
 .stat:nth-child(odd){border-right:1px solid #ffffff20}
 .stat:nth-last-child(-n+2){border-bottom:0}
-.stat strong{font-size:1.12rem}.stat small{font-size:.75rem}
+.stat strong{font-size:1.12rem}.stat small{font-size:.82rem}
 .section{padding:62px 0}
 .service-grid{gap:12px}.service-card img{height:140px}.service-content{padding:14px}.service-content h3{font-size:.95rem}.service-content p{font-size:.8rem}
 .why-grid{grid-template-columns:1fr;gap:35px}.why-photo img{height:340px}
